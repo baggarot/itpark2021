@@ -13,10 +13,10 @@ public class HomeWork2 {
         System.out.println(factorial(n));
     }
 
-    public static int factorial(int n){
-        if (n <= 1){
+    public static int factorial(int n) {
+        if (n <= 1) {
             return 1;
-        } else{
+        } else {
             return n * factorial(n - 1);
         }
     }
