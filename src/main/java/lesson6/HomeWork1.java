@@ -9,30 +9,46 @@ public class HomeWork1 {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите значение n для определения длины массива");
         int n = in.nextInt();
+        System.out.println(Arrays.toString(arrayNumber(n)));
+        System.out.println("Максимальное значение в массиве равно " + maximumValue(n));
+        System.out.println("Минимальное значение в массиве равно " + minimumValue(n));
+        System.out.println("Среднее арифмитическое значение элементов в массиве равно " + mean(n));
+    }
+
+    public static int[] arrayNumber(int n){
         int[] arrayNumber = new int[n];
         for (int i = 0; i < arrayNumber.length; i++) {
             arrayNumber[i] = (int) (Math.random() * 1000);
         }
-        System.out.println(Arrays.toString(arrayNumber));
+        return arrayNumber;
+    }
 
-        int max = arrayNumber[0];
-        for (int i = 0; i < arrayNumber.length; i++) {
-            max = Math.max(max, arrayNumber[i]);
+    public static int maximumValue(int n){
+        int[] arrayMaxNumber = Arrays.copyOf(arrayNumber(n), arrayNumber(n).length);
+        int max = arrayMaxNumber[0];
+        for (int j : arrayMaxNumber) {
+            max = Math.max(max, j);
         }
-        System.out.println("Максимальное значение в массиве равно " + max);
+        return max;
+    }
 
-        int min = arrayNumber[0];
-        for (int i = 0; i < arrayNumber.length; i++) {
-            min = Math.min(min, arrayNumber[i]);
+    public static int minimumValue(int n){
+        int[] arrayMinNumber = Arrays.copyOf(arrayNumber(n), arrayNumber(n).length);
+        int min = arrayMinNumber[0];
+        for (int j : arrayMinNumber) {
+            min = Math.min(min, j);
         }
-        System.out.println("Минимальное значение в массиве равно " + min);
+        return min;
+    }
 
-        double mean = 0;
-        int sum = 0;
-        for (int i = 0; i < arrayNumber.length; i++) {
-            sum += arrayNumber[i];
+    public static double mean(int n){
+        int[] arrayMean = Arrays.copyOf(arrayNumber(n), arrayNumber(n).length);
+        double mean;
+        double sum = 0;
+        for (int j : arrayMean) {
+            sum += j;
         }
-        mean = sum / arrayNumber.length;
-        System.out.println("Среднее арифмитическое значение элементов в массиве равно " + mean);
+        mean = sum / arrayMean.length;
+        return mean;
     }
 }
