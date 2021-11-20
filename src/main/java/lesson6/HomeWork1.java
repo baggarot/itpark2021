@@ -24,7 +24,7 @@ public class HomeWork1 {
     }
 
     public static int maximumValue(int n){
-        int[] arrayMaxNumber = Arrays.copyOf(arrayNumber(n), arrayNumber(n).length);
+        int[] arrayMaxNumber = arrayNumber(n);
         int max = arrayMaxNumber[0];
         for (int j : arrayMaxNumber) {
             max = Math.max(max, j);
@@ -33,7 +33,7 @@ public class HomeWork1 {
     }
 
     public static int minimumValue(int n){
-        int[] arrayMinNumber = Arrays.copyOf(arrayNumber(n), arrayNumber(n).length);
+        int[] arrayMinNumber = arrayNumber(n);
         int min = arrayMinNumber[0];
         for (int j : arrayMinNumber) {
             min = Math.min(min, j);
@@ -42,7 +42,7 @@ public class HomeWork1 {
     }
 
     public static double mean(int n){
-        int[] arrayMean = Arrays.copyOf(arrayNumber(n), arrayNumber(n).length);
+        int[] arrayMean = arrayNumber(n);
         double mean;
         double sum = 0;
         for (int j : arrayMean) {
