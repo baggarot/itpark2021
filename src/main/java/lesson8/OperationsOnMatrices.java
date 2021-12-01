@@ -1,6 +1,6 @@
 package lesson8;
 
-public class OperationsOnMatrices extends Matrix {
+public class OperationsOnMatrices {
 
     public static Matrix addition(Matrix first, Matrix second) {
         Matrix sumMatrix = new Matrix(first.getVerticalLength(), second.getHorizontalLength());

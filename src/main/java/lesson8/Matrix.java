@@ -7,9 +7,7 @@ public class Matrix {
     int[][] matrix;
 
     Matrix() {
-        this.n = 2;
-        this.m = 2;
-        this.matrix = new int[this.n][this.m];
+        this(2, 2);
     }
 
     public Matrix(int n, int m) {
