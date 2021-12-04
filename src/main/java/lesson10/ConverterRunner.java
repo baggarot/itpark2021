@@ -1,35 +1,20 @@
 package lesson10;
 
-import java.util.Scanner;
+import javax.swing.*;
 
 public class ConverterRunner {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите значенние темппературы");
-        double tempCelsToKelv = in.nextDouble();
-        TemperatureConverter converterFirst = new TemperatureConverter(tempCelsToKelv);
-        converterFirst.celsiusToKelvinConverter(tempCelsToKelv);
-        converterFirst.convertCelsiusToKelvin();
-        double tempKelvToCels = in.nextDouble();
-        TemperatureConverter converterSecond = new TemperatureConverter(tempKelvToCels);
-        converterSecond.kelvinToCelsiusConverter(tempKelvToCels);
-        converterSecond.convertKelvinToCelsius();
-        double tempCelsToFahr = in.nextDouble();
-        TemperatureConverter converterThird = new TemperatureConverter(tempCelsToFahr);
-        converterThird.celsiusToFahrenheitConverter(tempCelsToFahr);
-        converterThird.convertCelsiusToFahrenheit();
-        double tempFahrToCels = in.nextDouble();
-        TemperatureConverter converterFourth = new TemperatureConverter(tempFahrToCels);
-        converterFourth.fahrenheitToCelsiusConverter(tempFahrToCels);
-        converterFourth.convertFahrenheitToCelsius();
-        double tempFahrToKelv = in.nextDouble();
-        TemperatureConverter converterFifth = new TemperatureConverter(tempFahrToKelv);
-        converterFifth.fahrenheitToKelvinConverter(tempFahrToKelv);
-        converterFifth.convertFahrenheitToKelvin();
-        double tempKelvToFahr = in.nextDouble();
-        TemperatureConverter converterSixth = new TemperatureConverter(tempKelvToFahr);
-        converterSixth.kelvinToFahrenheitConverter(tempKelvToFahr);
-        converterSixth.convertKelvinToFahrenheit();
+        char convertFrom = JOptionPane.showInputDialog("Выберите шкалу температуры: " +
+                "'C' - шкала по Цельсию, " +
+                "'F' - шкала по Фаренгейту, " +
+                "'K' - шкала по Кельвину").charAt(0);
+        char convertTo = JOptionPane.showInputDialog("Выберите шкалу температуры: " +
+                "'C' - шкала по Цельсию, " +
+                "'F' - шкала по Фаренгейту, " +
+                "'K' - шкала по Кельвину").charAt(0);
+        double temp = Double.parseDouble(JOptionPane.showInputDialog("Введите значенние темппературы"));
+        TemperatureConverter convert = new TemperatureConverter(temp);
+        JOptionPane.showMessageDialog(null, convert.convertTemperature(temp, convertFrom, convertTo));
     }
 }

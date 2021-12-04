@@ -12,6 +12,28 @@ public class TemperatureConverter implements Convertible {
         return temp;
     }
 
+    public String convertTemperature(double temp, char convertFrom, char convertTo) {
+        if (convertFrom == 'C' & convertTo == 'F') {
+            convertCelsiusToFahrenheit();
+            return String.valueOf(celsiusToFahrenheitConverter(temp));
+        } else if (convertFrom == 'F' & convertTo == 'C') {
+            convertFahrenheitToCelsius();
+            return String.valueOf(fahrenheitToCelsiusConverter(temp));
+        } else if (convertFrom == 'C' & convertTo == 'K') {
+            convertCelsiusToKelvin();
+            return String.valueOf(celsiusToKelvinConverter(temp));
+        } else if (convertFrom == 'K' & convertTo == 'C') {
+            convertKelvinToCelsius();
+            return String.valueOf(kelvinToCelsiusConverter(temp));
+        } else if (convertFrom == 'F' & convertTo == 'K') {
+            convertFahrenheitToKelvin();
+            return String.valueOf(fahrenheitToKelvinConverter(temp));
+        } else if (convertFrom == 'K' & convertTo == 'F') {
+            convertKelvinToFahrenheit();
+            return String.valueOf(kelvinToFahrenheitConverter(temp));
+        } else return "Ненверно выбранный аргумент";
+    }
+
     public double celsiusToFahrenheitConverter(double temp) {
         return temp * 1.8 + 32;
     }
