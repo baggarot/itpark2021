@@ -1,9 +1,6 @@
 package lesson15;
 
-import java.util.Comparator;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -25,5 +22,17 @@ public class StreamRunner {
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
                         (e1, e2) -> e2, LinkedHashMap::new));
         System.out.println(wordCount);
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите текс для его разбивки на слова и обработки");
+        String text = in.nextLine();
+        List<String> wordsFromText = List.of(text.split("\\W+"));
+        Map<String, Long> wordProcessing = wordsFromText.stream()
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+                .entrySet().stream()
+                .sorted(Map.Entry.<String, Long>comparingByValue(Comparator.reverseOrder())
+                        .thenComparing(Map.Entry.comparingByKey()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
+                        (e1, e2) -> e2, LinkedHashMap::new));
+        System.out.println(wordProcessing);
     }
 }
