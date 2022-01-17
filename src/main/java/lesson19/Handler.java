@@ -7,10 +7,9 @@ public record Handler(Blockable account) implements InvocationHandler {
 
     public Object invoke(Object proxy, Method method, Object[] args) throws Exception {
         Blocked accountBlocked = method.getAnnotation(Blocked.class);
-        Object result = method.invoke(account, args);
-        if (result == null && accountBlocked != null) {
+        if (accountBlocked != null) {
             System.out.println("Невозможно выполнить данную опреацию. Счет клиента заблокирован!");
-        }
-        return result;
+        } else return method.invoke(account, args);
+        return 1;
     }
 }
