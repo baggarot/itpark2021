@@ -6,10 +6,6 @@ import jakarta.xml.bind.annotation.XmlType;
 import lombok.*;
 
 @Data
-@ToString
-@NoArgsConstructor
-@Getter
-@Setter
 @XmlRootElement
 @XmlAccessorType
 @XmlType

@@ -8,10 +8,6 @@ import lombok.*;
 import java.util.List;
 
 @Data
-@ToString
-@NoArgsConstructor
-@Getter
-@Setter
 @XmlRootElement
 @XmlAccessorType
 @XmlType

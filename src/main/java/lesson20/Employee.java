@@ -4,10 +4,6 @@ import jakarta.xml.bind.annotation.*;
 import lombok.*;
 
 @Data
-@ToString
-@NoArgsConstructor
-@Getter
-@Setter
 @XmlRootElement(name = "employee")
 @XmlAccessorType
 @XmlType

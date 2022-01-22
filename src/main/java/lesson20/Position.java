@@ -8,10 +8,6 @@ import lombok.*;
 import java.math.BigDecimal;
 
 @Data
-@ToString
-@NoArgsConstructor
-@Getter
-@Setter
 @XmlRootElement
 @XmlAccessorType
 @XmlType

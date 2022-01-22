@@ -1,6 +1,6 @@
 package lesson2;
 
-public class Calculater {
+public class Calculator {
 
     public static void main(String[] args){
         System.out.println(addition(7,9));
