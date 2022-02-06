@@ -1,0 +1,137 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CheckDtdRefs" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="CheckEmptyScriptTag" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="CheckNodeTest" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="CheckTagEmptyBody" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="CheckValidXmlInScriptTagBody" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="CheckXmlFileWithXercesValidator" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="ComparatorNotSerializable" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="ComposeMissingKeys" enabled="false" level="TYPO" enabled_by_default="false" />
+    <inspection_tool class="ComposeUnknownKeys" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="ComposeUnknownValues" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="ComposeUnquotedPorts" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="DeprecatedClassUsageInspection" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="DeprecatedLombok" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="ExternalizableWithSerializationMethods" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="ExternalizableWithoutPublicNoArgConstructor" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="HardwiredNamespacePrefix" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="HtmlExtraClosingTag" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="HtmlMissingClosingTag" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="HtmlUnknownAnchorTarget" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="TYPO" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="0" />
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownBooleanAttribute" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="TYPO" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="6">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTarget" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="ImplicitTypeConversion" enabled="true" level="TYPO" enabled_by_default="true">
+      <option name="BITS" value="1720" />
+      <option name="FLAG_EXPLICIT_CONVERSION" value="true" />
+      <option name="IGNORE_NODESET_TO_BOOLEAN_VIA_STRING" value="true" />
+    </inspection_tool>
+    <inspection_tool class="IndexZeroUsage" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="Json5StandardCompliance" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="JsonDuplicatePropertyKeys" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="JsonPathEvaluateUnknownKey" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="JsonPathUnknownFunction" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="JsonPathUnknownOperator" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="JsonSchemaCompliance" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="JsonSchemaDeprecation" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="JsonSchemaRefReference" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="JsonStandardCompliance" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="Junit5MalformedParameterized" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="Lombok" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="MavenDuplicateDependenciesInspection" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="MavenDuplicatePluginInspection" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="MavenModelInspection" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="MavenParentMissedVersionInspection" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="MavenPropertyInParent" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="MavenRedundantGroupId" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="MissingSerialAnnotation" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="NonSerializableFieldInSerializableClass" enabled="true" level="TYPO" enabled_by_default="true">
+      <option name="ignorableAnnotations">
+        <value />
+      </option>
+      <option name="ignoreAnonymousInnerClasses" value="false" />
+      <option name="superClassString" value="java.awt.Component" />
+    </inspection_tool>
+    <inspection_tool class="NonSerializableObjectBoundToHttpSession" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="NonSerializableObjectPassedToObjectStream" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="NonSerializableWithSerialVersionUIDField" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="NonSerializableWithSerializationMethods" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="ReadObjectAndWriteObjectPrivate" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="ReadObjectInitialization" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="ReadResolveAndWriteReplaceProtected" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="RedundantModifiersUtilityClassLombok" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="RedundantModifiersValLombok" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="RedundantModifiersValueLombok" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="RedundantSlf4jDefinition" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="RedundantTypeConversion" enabled="true" level="TYPO" enabled_by_default="true">
+      <option name="CHECK_ANY" value="false" />
+    </inspection_tool>
+    <inspection_tool class="RequiredAttributes" enabled="true" level="TYPO" enabled_by_default="true">
+      <option name="myAdditionalRequiredHtmlAttributes" value="" />
+    </inspection_tool>
+    <inspection_tool class="SerialAnnotationUsedOnWrongMember" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="SerialPersistentFieldsWithWrongSignature" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="SerialVersionUIDNotStaticFinal" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="SerializableHasSerialVersionUIDField" enabled="true" level="TYPO" enabled_by_default="true">
+      <option name="ignoreAnonymousInnerClasses" value="false" />
+      <option name="superClassString" value="java.awt.Component" />
+    </inspection_tool>
+    <inspection_tool class="SerializableHasSerializationMethods" enabled="true" level="TYPO" enabled_by_default="true">
+      <option name="ignoreAnonymousInnerClasses" value="false" />
+      <option name="superClassString" value="java.awt.Component" />
+    </inspection_tool>
+    <inspection_tool class="SerializableInnerClassHasSerialVersionUIDField" enabled="true" level="TYPO" enabled_by_default="true">
+      <option name="ignoreAnonymousInnerClasses" value="false" />
+      <option name="superClassString" value="java.awt.Component" />
+    </inspection_tool>
+    <inspection_tool class="SerializableInnerClassWithNonSerializableOuterClass" enabled="true" level="TYPO" enabled_by_default="true">
+      <option name="ignoreAnonymousInnerClasses" value="false" />
+      <option name="superClassString" value="java.awt.Component" />
+    </inspection_tool>
+    <inspection_tool class="SerializableRecordContainsIgnoredMembers" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="SerializableStoresNonSerializable" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="SerializableWithUnconstructableAncestor" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="SpringQualifierCopyableLombok" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="TransientFieldInNonSerializableClass" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="TransientFieldNotInitialized" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="XmlDefaultAttributeValue" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="XmlDeprecatedElement" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="XmlDuplicatedId" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="XmlHighlighting" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="XmlInvalidId" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="XmlPathReference" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="XmlUnboundNsPrefix" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="XmlUnusedNamespaceDeclaration" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="XmlWrongRootElement" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="YAMLDuplicatedKeys" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="YAMLRecursiveAlias" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="YAMLSchemaDeprecation" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="YAMLSchemaValidation" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="YAMLUnresolvedAlias" enabled="true" level="TYPO" enabled_by_default="true" />
+    <inspection_tool class="YAMLUnusedAnchor" enabled="true" level="TYPO" enabled_by_default="true" />
+  </profile>
+</component>
