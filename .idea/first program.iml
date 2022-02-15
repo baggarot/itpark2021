@@ -21,7 +21,12 @@
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="MessageImpl" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/lesson27/impl/MessageImpl.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/lesson27/impl/MessageService.java</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17">
